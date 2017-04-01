@@ -22,7 +22,7 @@
 
 - (void) testLog{
 
-    NSLog(@"Cocoapods Test");
+    NSLog(@"Hello Cocoapods");
 
 }
 
