@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint TestCocoapodsProject.podspec' to ensure this is a
+# Be sure to run `pod lib lint FirstCocoapodsProject.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,33 +7,24 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TestCocoapodsProject'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TestCocoapodsProject.'
+  s.name             = 'CocoapodsDemo'
+  s.version          = '1.0'
+  s.summary          = 'Cocoapods Test 测试使用测试使用测试使用测试使用测试使用.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description      = 'Cocoapods Test'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/Felix Yin/TestCocoapodsProject'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/FelixYin66/CocoapodsDemo'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Felix Yin' => 'lafenglafenghaha@163.com' }
-  s.source           = { :git => 'https://github.com/Felix Yin/TestCocoapodsProject.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'https://github.com/FelixYin66/CocoapodsDemo.git', :tag => s.version }
+  s.social_media_url = 'https://github.com/FelixYin66'
+  s.requires_arc = true
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TestCocoapodsProject/Classes/**/*'
+  s.source_files = 'FirstCocoapodsProject/**/*'
   
   # s.resource_bundles = {
-  #   'TestCocoapodsProject' => ['TestCocoapodsProject/Assets/*.png']
+  #   'FirstCocoapodsProject' => ['FirstCocoapodsProject/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

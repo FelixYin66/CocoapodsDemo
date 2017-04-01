@@ -23,6 +23,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		869A6C1F1E8FA3E400E9D092 /* FYCocoapodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869A6C1E1E8FA3E400E9D092 /* FYCocoapodsViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,13 +59,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6A795AE8725177F9B507DB72 /* TestCocoapodsProject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestCocoapodsProject.podspec; path = ../TestCocoapodsProject.podspec; sourceTree = "<group>"; };
+		6A795AE8725177F9B507DB72 /* TestCocoapodsProject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestCocoapodsProject.podspec; path = ../TestCocoapodsProject.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		869A6C1D1E8FA3E400E9D092 /* FYCocoapodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYCocoapodsViewController.h; sourceTree = "<group>"; };
+		869A6C1E1E8FA3E400E9D092 /* FYCocoapodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYCocoapodsViewController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B94D9BA8F1BD7A307000EB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9B94D9BA8F1BD7A307000EB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9BB1A3F6E9CA3954741914C6 /* Pods_TestCocoapodsProject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCocoapodsProject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB1622801DE1227D6248BD5 /* Pods-TestCocoapodsProject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCocoapodsProject_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCocoapodsProject_Example/Pods-TestCocoapodsProject_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9F6EADFF390D622722AECBC8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9F6EADFF390D622722AECBC8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A1E15ACE48634BD8F9315D1F /* Pods_TestCocoapodsProject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCocoapodsProject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3400A77E72A0F42F870B6A /* Pods-TestCocoapodsProject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCocoapodsProject_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCocoapodsProject_Tests/Pods-TestCocoapodsProject_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +135,7 @@
 		6003F593195388D20070C39A /* Example for TestCocoapodsProject */ = {
 			isa = PBXGroup;
 			children = (
+				869A6C1C1E8FA39F00E9D092 /* CocoapodsTest */,
 				6003F59C195388D20070C39A /* FYAppDelegate.h */,
 				6003F59D195388D20070C39A /* FYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +198,15 @@
 				DA3400A77E72A0F42F870B6A /* Pods-TestCocoapodsProject_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		869A6C1C1E8FA39F00E9D092 /* CocoapodsTest */ = {
+			isa = PBXGroup;
+			children = (
+				869A6C1D1E8FA3E400E9D092 /* FYCocoapodsViewController.h */,
+				869A6C1E1E8FA3E400E9D092 /* FYCocoapodsViewController.m */,
+			);
+			path = CocoapodsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +410,7 @@
 				6003F59E195388D20070C39A /* FYAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* FYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				869A6C1F1E8FA3E400E9D092 /* FYCocoapodsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
