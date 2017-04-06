@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'CocoapodsDemo'
+  s.name             = 'TestCocoapodsProject'
   s.version          = '1.0'
   s.summary          = 'Cocoapods Test 测试使用测试使用测试使用测试使用测试使用.'
 
@@ -16,15 +16,17 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/FelixYin66/CocoapodsDemo'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Felix Yin' => 'lafenglafenghaha@163.com' }
-  s.source           = { :git => 'https://github.com/FelixYin66/CocoapodsDemo.git', :tag => s.version }
+   #:tag => s.version 
+   #commit =>'68f294bed82dbc110bfe8cf14b7cd67a100ed28e'
+  s.source           = { :git => 'https://github.com/FelixYin66/CocoapodsDemo.git',:tag => s.version}
   s.social_media_url = 'https://github.com/FelixYin66'
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FirstCocoapodsProject/**/*'
+  s.source_files = '*'
   
   # s.resource_bundles = {
-  #   'FirstCocoapodsProject' => ['FirstCocoapodsProject/Assets/*.png']
+  #   'FirstCocoapodsProject' => ['TestCocoapodsProject/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

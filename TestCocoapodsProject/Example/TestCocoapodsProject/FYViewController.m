@@ -23,6 +23,12 @@
     
 }
 
+- (void) test{
+    
+    NSLog(@"Tag push");
+
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
